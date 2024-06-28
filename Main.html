@@ -1,0 +1,178 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-Ride</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="my.icon.jpg">
+</head>
+    <style>
+        /* Basic styling - you can add more CSS to customize */
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.dashboard {
+    background-color: #f6f6f6c7;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.dashboard a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
+.dashboard a:hover {
+    text-decoration: underline;
+}
+.photos {
+    position: relative;
+    display: block; /* Changed to block */
+    margin-bottom: 20px;
+}
+.photos img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.text-section {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.text-section h1 {
+    font-size: 3rem;
+    margin: 0;
+    
+    top 20%;
+}
+.text-section button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.text-section button:hover {
+    background-color: #007BFF;
+}
+.text-section p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: white;
+}
+.form-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+.form-section h2 {
+    margin-bottom: 20px;
+}
+.form-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-section input,
+.form-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-section button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-section button:hover {
+    background-color: #007BFF;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard">
+            <a href="Main.html">Home</a>
+            <a href="sales.html">For Sale</a>
+            <a href="Contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </div>
+        
+        <div class="photos">
+            <img src="Background2.png" alt="Background Image">
+            <div class="text-section">
+                <h1>RE-RIDE</h1>
+                <button onclick="location.href='sales.html'">Shop Now</button>
+                <p>Selling Second Hand Bicycles</p>
+            </div>
+              <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function() {
+      emailjs.init('b1YpMV7SLOu9eHNua');
+   })();
+   <form id="contact-form">
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="number" placeholder="Your Number" required>
+    <button type="submit">Submit</button>
+</form>
+
+<script type="text/javascript">
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        emailjs.sendForm('service_yomp523', 'te_5dl9yzdtempla', this)
+            .then(function() {
+                alert('Form submission received!');
+            }, function(error) {
+                alert('Failed to send form submission: ' + JSON.stringify(error));
+            });
+    });
+</script>
+        <div class="form-section">
+            <h2>Want To Sell Your Bike?</h2>
+            <form action = "francomcleodmtb@gmail.com" method="GET" enctype="text/plain">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="bike_photo">Photo of Your Bike:</label>
+                <input type="file" id="bike_photo" name="bike_photo" accept="image/*" required>
+
+                <label for="message">Additional Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            
+    <div>
+
+    </div>
+  
+
+</body>
+</html>

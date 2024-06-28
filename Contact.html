@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - RE-RIDE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="my.icon.jpg">
+    <style>
+        /* Add or modify styles as needed */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .dashboard {
+            background-color: #f6f6f6c7;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .dashboard a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .dashboard a:hover {
+            text-decoration: underline;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+            
+          
+        }
+        .contact-info h2 {
+            margin-bottom: 10px;
+            
+            
+        }
+        .contact-info p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #333;
+            
+        }
+        .contact-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .contact-form h2 {
+            margin-bottom: 20px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form textarea {
+            resize: vertical; /* Allow vertical resizing of textarea */
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard">
+            <a href="#">Home</a>
+            <a href="sales.html">For Sale</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </div>
+
+        <div class="contact">
+            <h2>Contact Information</h2>
+            <p>
+                Feel free to contact us for any inquiries or questions you may have. We're here to help!
+            </p>
+            <p>
+                Email: info@reridebikes@gmail.com<br>
+                Phone: 076 734 0588<br>
+                
+            </p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_contact.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicycles for Sale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: black;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+    
+.dashboard {
+    background-color: #f6f6f6c7;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.dashboard a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
+.dashboard a:hover {
+    text-decoration: underline;
+}
+        
+        .carousel {
+            position: relative;
+            max-width: 800px;
+            margin: 40px auto;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        .carousel-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            border-radius: 10px;
+        }
+        .carousel-slide {
+            flex: 0 0 100%;
+            display: none;
+        }
+        .carousel-slide img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            max-height: 400px;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .bike-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        .bike-info h3 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        .bike-info p {
+            font-size: 1.2rem;
+            margin: 0;
+            color:black;
+        }
+        .description {
+            color: black;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            color: black;
+        }
+        ul li {
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard">
+            <a href="Main.html">Home</a>
+            <a href="sales.html">For Sale</a>
+            <a href="Contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </div>
+        
+        <!-- First Carousel -->
+        <div class="carousel" id="carousel1">
+            <p>Price R21 000,00</p>
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <a href="bicycles/Giant Xtc/giant_xtc_1.jpg">
+                        <img src="bicycles/Giant Xtc/giant_xtc_1.jpg" alt="Bike 1">
+                    </a>
+                </div>
+                <div class="carousel-slide">
+                    <a href="bicycles/Giant Xtc/giant_xtc_2.jpg">
+                        <img src="bicycles/Giant Xtc/giant_xtc_2.jpg" alt="Bike 2">
+                    </a>
+                </div>
+                <div class="carousel-slide">
+                    <a href="bicycles/Giant Xtc/giant_xtc_3.jpg">
+                        <img src="bicycles/Giant Xtc/giant_xtc_3.jpg" alt="Bike 3">
+                    </a>
+                </div>
+                <div class="carousel-slide">
+                    <a href="bicycles/Giant Xtc/giant_xtc_4.jpg">
+                        <img src="bicycles/Giant Xtc/giant_xtc_4.jpg" alt="Bike 4">
+                    </a>
+                </div>
+                <div class="carousel-slide">
+                    <a href="bicycles/Giant Xtc/giant_xtc_5.jpg">
+                        <img src="bicycles/Giant Xtc/giant_xtc_5.jpg" alt="Bike 5">
+                    </a>
+                </div>
+                <div class="carousel-slide">
+                    <a href="bicycles/Giant Xtc/giant_xtc_6.jpg">
+                        <img src="bicycles/Giant Xtc/giant_xtc_6.jpg" alt="Bike 6">
+                    </a>
+                </div>
+            </div>
+            <h3>Description</h3>
+            <p class="description">This is a great mountain bike for all terrains. It features a carbon frame, reliable gears, and excellent fox suspension.</p>
+            <p class="description">Specifications:</p>
+            <ul>
+                <li>Size XL</li>
+                <li>Sram XO 2x9 drivetrain.</li>
+                <li>Fox suspension with lockout.</li>
+            </ul>
+            <a class="prev" onclick="plusSlides(-1, 'carousel1')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'carousel1')">&#10095;</a>
+        </div>
+
+        <!-- Second Carousel -->
+        <div class="carousel" id="carousel2">
+            <p>Price R18 500,00</p>
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <a href="bicycles/BMC Team/BMC_Team_1.jpg">
+                        <img src="bicycles/BMC Team/BMC_Team_1.jpg" alt="Bike 1">
+                    </a>
+                </div>
+                <div class="carousel-slide">
+                    <a href="bicycles/BMC Team/BMC_Team_2.jpg">
+                        <img src="bicycles/BMC Team/BMC_Team_2.jpg" alt="Bike 2">
+                    </a>
+                </div>
+                <div class="carousel-slide">
+                    <a href="bicycles/BMC Team/BMC_Team_3.jpg">
+                        <img src="bicycles/BMC Team/BMC_Team_3.jpg" alt="Bike 3">
+                    </a>
+                </div>
+                <div class="carousel-slide">
+                    <a href="bicycles/BMC Team/BMC_Team_4.jpg">
+                        <img src="bicycles/BMC Team/BMC_Team_4.jpg" alt="Bike 4">
+                    </a>
+                </div>
+            </div>
+            <h3>Description</h3>
+            <p class="description">The BMC is designed for cross country adventures. It features an carbon frame, precise Sram gears, and durable tires.</p>
+            <p class="description">Specifications:</p>
+            <ul>
+                <li>Size L</li>
+                <li>Shimano Deore 1x12 drivetrain.</li>
+                <li>RockShox suspension with lockout.</li>
+            </ul>
+            <a class="prev" onclick="plusSlides(-1, 'carousel2')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'carousel2')">&#10095;</a>
+        </div>
+    </div>
+    <!--3de fiets-->
+    <div class="carousel" id="carousel3">
+        <p>Price R18 500,00</p>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <a href="bicycles/Trek Marlin/Trek_Marlin_1.jpg">
+                    <img src="bicycles/Trek Marlin/Trek_Marlin_1.jpg" alt="Bike 1">
+                </a>
+            </div>
+            <div class="carousel-slide">
+                <a href="bicycles/Trek Marlin/Trek_Marlin_2.jpg">
+                    <img src="bicycles/Trek Marlin/Trek_Marlin_2.jpg" alt="Bike 2">
+                </a>
+            </div>
+            <div class="carousel-slide">
+                <a href="bicycles/Trek Marlin/Trek_Marlin_3.jpg">
+                    <img src="bicycles/Trek Marlin/Trek_Marlin_3.jpg" alt="Bike 3">
+                </a>
+            </div>
+            <div class="carousel-slide">
+                <a href="bicycles/Trek Marlin/Trek_Marlin_4.jpg">
+                    <img src="bicycles/Trek Marlin/Trek_Marlin_4.jpg" alt="Bike 4">
+                </a>
+            </div>
+        </div>
+        <h3>Description</h3>
+        <p class="description">The Trek Marlin is designed for cross country adventures. It features an aluminum frame, precise Shimano gears, and great suspension.</p>
+        <p class="description">Specifications:</p>
+        <ul>
+            <li>Size L</li>
+            <li>Shimano XT 1x10 drivetrain.</li>
+            <li>RockShox suspension.</li>
+        </ul>
+        <a class="prev" onclick="plusSlides(-1, 'carousel3')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'carousel3')">&#10095;</a>
+    </div>
+</div>
+
+    <script>
+        function plusSlides(n, carouselId) {
+            const carousel = document.getElementById(carouselId);
+            const slides = carousel.getElementsByClassName('carousel-slide');
+            let slideIndex = parseInt(carousel.getAttribute('data-slide-index')) || 0;
+            slideIndex += n;
+            if (slideIndex >= slides.length) slideIndex = 0;
+            if (slideIndex < 0) slideIndex = slides.length - 1;
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex].style.display = "block";
+            carousel.setAttribute('data-slide-index', slideIndex);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const carousels = document.getElementsByClassName('carousel');
+            for (let carousel of carousels) {
+                carousel.setAttribute('data-slide-index', 0);
+                const slides = carousel.getElementsByClassName('carousel-slide');
+                if (slides.length > 0) {
+                    slides[0].style.display = 'block';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
