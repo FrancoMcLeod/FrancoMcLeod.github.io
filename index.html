@@ -139,21 +139,11 @@
     <button type="submit">Submit</button>
 </form>
 
-<script type="text/javascript">
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
 
-        emailjs.sendForm('service_yomp523', 'te_5dl9yzdtempla', this)
-            .then(function() {
-                alert('Form submission received!');
-            }, function(error) {
-                alert('Failed to send form submission: ' + JSON.stringify(error));
-            });
-    });
 </script>
         <div class="form-section">
             <h2>Want To Sell Your Bike?</h2>
-            <form action = "francomcleodmtb@gmail.com" method="GET" enctype="text/plain">
+               <form action="https://formsubmit.co/francomcleodmtb@gmail.com" method="POST">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
 
